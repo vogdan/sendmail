@@ -24,9 +24,10 @@ def parse_cli_opts():
                             required=True)
     return  arg_parser.parse_args()
 
-args = parse_cli_opts()
-try:
 
+args = parse_cli_opts()
+
+try:
     msg = MIMEMultipart()
     msg['From'] = FROM_ADDR
     msg['To'] = args.to
