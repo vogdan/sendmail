@@ -8,6 +8,7 @@ from argparse import ArgumentParser
 GMAIL_USER = 'your gmail user'
 GMAIL_PASS = 'your gmail pass'
 FROM_ADDR = 'your_username@gmail.com'
+
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
@@ -22,6 +23,8 @@ def parse_cli_opts():
     arg_parser.add_argument('-b', '--body',
                             help='Text file containing message body',
                             required=True)
+    arg_parser.add_argument('-sig', '--signature',
+                            help='Text file containing signature')
     return  arg_parser.parse_args()
 
 
@@ -32,11 +35,17 @@ try:
     msg['From'] = FROM_ADDR
     msg['To'] = args.to
     msg['Subject'] = args.subject
-
+    
     with open(args.body, 'rb') as f:
         body_text = f.read()
         msg.attach(MIMEText(body_text, 'plain'))
-        
+    
+    if args.signature:
+        with open(args.signature, 'rb') as f:
+            signature = f.read()
+            signatire = "\n\n" + signature
+            msg.attach(MIMEText(signature, 'plain'))
+    
     server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
     server.starttls()
     server.login(GMAIL_USER, GMAIL_PASS)

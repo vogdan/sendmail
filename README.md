@@ -17,4 +17,7 @@ Send email via Gmail SMTP
                             Message subject
       -to TO, --to TO       Message recipuent
       -b BODY, --body BODY  Text file containing message body
+      -sig SIGNATURE, --signature SIGNATURE
+                            Text file containing signature
+
 ```
