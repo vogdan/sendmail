@@ -29,4 +29,5 @@ Send email via Gmail SMTP
 
 ####Others
 
-An error log file (```mailsend_py.log```) is created and located in the CWD.
+An error log file named ```mailsend_py.log``` is created and located in the CWD. 
+All messages will be written to this log and nothing will be displayed at the console, unless the program fails miserably :).
