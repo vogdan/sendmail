@@ -26,3 +26,7 @@ Send email via Gmail SMTP
                             Text file containing signature
 
 ```
+
+####Others
+
+An error log file (```mailsend_py.log```) is created and located in the CWD.
