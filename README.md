@@ -15,7 +15,12 @@ Send email via Gmail SMTP
       -h, --help            show this help message and exit
       -s SUBJECT, --subject SUBJECT
                             Message subject
-      -to TO, --to TO       Message recipuent
+      -to TO, --to TO       Message recipient(s). 
+                            Accepted values: 
+                               * email address; 
+                               * multiple email addresses separated by ',';
+                               * a file containing email addresses, one on each line.
+
       -b BODY, --body BODY  Text file containing message body
       -sig SIGNATURE, --signature SIGNATURE
                             Text file containing signature
