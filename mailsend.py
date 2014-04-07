@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+#
+# Send email via Gmail SMTP
+#
+# Usage info:
+#
+#        mailsend.py -h
+#
+# 
+
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
