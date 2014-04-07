@@ -1,10 +1,13 @@
-sendmail
+zevtools
 ========
+
+
+#### mailsend.py
 
 Send email via Gmail SMTP
 
 
-####USAGE
+#####USAGE
 
 ```
     mailsend.py [-h] -s SUBJECT -to TO -b BODY
@@ -27,7 +30,7 @@ Send email via Gmail SMTP
 
 ```
 
-####Others
+#####Notes
 
 An error log file named ```mailsend_py.log``` is created and located in the CWD. 
 All messages will be written to this log and nothing will be displayed at the console, unless the program fails miserably :).
