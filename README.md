@@ -2,12 +2,13 @@ zevtools
 ========
 
 
-## mailsend.py
+
+###mailsend.py
 
 Send email via Gmail SMTP
 
 
-#####USAGE
+#####Usage
 
 ```
     mailsend.py [-h] -s SUBJECT -to TO -b BODY [-sig SIGNATURE]
