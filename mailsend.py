@@ -34,6 +34,7 @@ Accepted values: * email address;
                  * multiple email addresses separated by ',';
                  * a file containing email addresses, one on each line.
 ''',
+                            metavar='RECIPIENT(S)',
                             required=True)
     arg_parser.add_argument('-b', '--body',
                             help='Text file containing message body',
