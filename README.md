@@ -32,6 +32,7 @@ Send email via Gmail SMTP
 ```
 
 
+
 ###del_old_files.py
 
 Delete old files in the specified dir and it's subdirs, excluding the files in
@@ -59,5 +60,5 @@ the except subdir
 
 
 ###Notes
-For each of the abou scripts, an error log file (```mailsend_py.log``` or ```del_old_files_py.log```) will be created in the CWD. 
+For each of the above scripts, an error log file ( ```mailsend_py.log``` or ```del_old_files_py.log``` ) will be created in the CWD. 
 All errot and information messages will be written to this log and nothing will be displayed at the console, unless the program fails miserably :).
