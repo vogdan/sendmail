@@ -18,7 +18,7 @@ DAY_SECS = HOUR_SECS * 24
 def parse_cli_opts():
     arg_parser = ArgumentParser(description='''
 Delete old files in the specified dir and it's subdirs, 
-excepting the files in the except subdir''')
+excluding the files in the except subdir''')
     arg_parser.add_argument('-a', '--age-limit',
                             help='''File age limit (all files older than AGE days will be deleted)
 File age will be determined by time of most recent content modification.
