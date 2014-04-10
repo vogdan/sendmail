@@ -26,10 +26,11 @@ Send email via Gmail SMTP
                                * a file containing email addresses, one on each line.
 
       -b BODY, --body BODY  Text file containing message body
-      -sig SIGNATURE, --signature SIGNATURE
+      -sig SIGNATURE, --signature SIGNATURE - optional -
                             Text file containing signature
 
 ```
+
 
 
 ###del_old_files.py
@@ -42,7 +43,7 @@ the except subdir
 ```
         del_old_files.py [-h] -a AGE -d DIR [-e SUBDIR]
 
-        optional arguments:
+        Arguments:
           -h, --help            show this help message and exit
           -a AGE, --age-limit AGE
                                 File age limit (all files older than AGE days will be
@@ -51,13 +52,16 @@ the except subdir
           -d DIR, --parent_dir DIR
                                 Absolute path of parent dir containing all subdirs to
                                 delete from
-          -e SUBDIR, --except-subdir SUBDIR
+          -e SUBDIR, --except-subdir SUBDIR - optional -
                                 Skip files in the specified subdir. Relative path
-                                inside parent dir
+                                inside parent dir.
 ```
 
 
 
 ###Notes
-For each of the abou scripts, an error log file (```mailsend_py.log``` or ```del_old_files_py.log```) will be created in the CWD. 
-All errot and information messages will be written to this log and nothing will be displayed at the console, unless the program fails miserably :).
+For each of the above scripts, a ```.log``` file will be created in the CWD:
+ * ```mailsend_py.log``` for ```mailsend.py``` 
+ * ```del_old_files_py.log``` for ```del_old_files.py```
+
+All error and information messages will be written to this log and nothing will be displayed at the console, unless the program fails miserably :).
