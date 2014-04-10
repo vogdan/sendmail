@@ -20,10 +20,6 @@ GMAIL_USER = 'your gmail user'
 GMAIL_PASS = 'your gmail pass'
 FROM_ADDR = 'your_username@gmail.com'
 
-GMAIL_USER = 'vateste666'
-GMAIL_PASS = 'dinozaur'
-FROM_ADDR = 'vateste666@gmail.com'
-
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
@@ -38,7 +34,7 @@ Accepted values: * email address;
                  * multiple email addresses separated by ',';
                  * a file containing email addresses, one on each line.
 ''',
-                            metavar='RECIPIENT(S)',
+                            metavar='RECIPIENT(S)'
                             required=True)
     arg_parser.add_argument('-b', '--body',
                             help='Text file containing message body',
