@@ -60,14 +60,12 @@ the except subdir
 
 ###load_alert.sh
 
-Delete old files in the specified dir and it's subdirs, excluding the files in
-the except subdir
+Uses ```mailsend.py``` to send email when the system load limit is more than the specified limit.
 
 #####Usage
 
 ```
       ./load_alert.sh [-h] -to email -lim limit
-      Send email when the system load limit is more than the specified limit.
 
       Arguments:
             -h      show this help and exit
