@@ -58,6 +58,27 @@ the except subdir
 ```
 
 
+###load_alert.sh
+
+Delete old files in the specified dir and it's subdirs, excluding the files in
+the except subdir
+
+#####Usage
+
+```
+      ./load_alert.sh [-h] -to email -lim limit
+      Send email when the system load limit is more than the specified limit.
+
+      Arguments:
+            -h      show this help and exit
+            -to     - mandatory arg - email address to send alert message to
+            -lim    - mandatory arg - total system disk load limit that will trigger the email sending
+
+      Example:
+            ./load_alert.sh -to you@mail.com -lim 90
+          Sends mail to you@mail.com when the host total disk load is more than 90%
+```
+
 
 ###Notes
 For each of the above scripts, a ```.log``` file will be created in the CWD:
