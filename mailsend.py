@@ -22,10 +22,6 @@ GMAIL_USER = 'your gmail user'
 GMAIL_PASS = 'your gmail pass'
 FROM_ADDR = 'your_username@gmail.com'
 
-GMAIL_USER = 'vateste666'
-GMAIL_PASS = 'dinozaur'
-FROM_ADDR = 'vateste666@gmail.com'
-
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
