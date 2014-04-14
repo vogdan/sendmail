@@ -24,8 +24,34 @@ Send email via Gmail SMTP
                                * email address; 
                                * multiple email addresses separated by ',';
                                * a file containing email addresses, one on each line.
-
       -b BODY, --body BODY  Text file containing message body
+      -R TXT_FILE, --rotate TXT_FILE
+                        Text file containing subjects and message bodies. 
+                        The script would send the first subject/body for 
+                        the first time it's triggered, the second subject/body 
+                        the next time, etc.
+                        
+                        Accepted file structure:
+                        
+                        []
+                        [SUBJECT]
+                        Some Subject
+                        [BODY]
+                        Some body (can be multiline)
+                        ---
+                        [X]
+                        [SUBJECT]
+                        Some other subject
+                        [BODY]
+                        Some other body (can be multiline)
+                        ---
+       
+                        ...
+                        
+         
+                        The script will cycle through pairs of subjects and bodies. 
+                        "[X]" marks the pair to start from.
+
       -sig SIGNATURE, --signature SIGNATURE - optional -
                             Text file containing signature
 
