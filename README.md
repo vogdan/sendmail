@@ -69,6 +69,9 @@ the except subdir
 ```
         del_old_files.py [-h] -a AGE -d DIR [-e SUBDIR]
 
+        Delete files older thatn AGE days in the DIR directory, except the files in the 
+        SUBDIR subdirectory.
+
         Arguments:
           -h, --help            show this help message and exit
           -a AGE, --age-limit AGE
@@ -91,7 +94,9 @@ Uses ```mailsend.py``` to send email when the system load limit is more than the
 #####Usage
 
 ```
-      ./load_alert.sh [-h] -to email -lim limit
+      ./load_alert.sh [-h] -to EMAIL -lim LIMIT
+      
+      Send email to EMAIL when the host total disk load in more than LIMIT%
 
       Arguments:
             -h      show this help and exit
