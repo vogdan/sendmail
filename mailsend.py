@@ -66,7 +66,6 @@ Some other body (can be multiline)
 The script will cycle through pairs of subjects and bodies. 
 "[X]" marks the pair to start from.''',
                              metavar='TXT_FILE')
-
     arg_parser.add_argument('-sig', '--signature',
                             help='Text file containing signature')
     return  arg_parser.parse_args()
